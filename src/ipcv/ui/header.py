@@ -66,7 +66,7 @@ class HeaderPanel(ctk.CTkFrame):
         ctk.CTkLabel(
             text_stack,
             text=config.SUBTITLE,
-            font=ctk.CTkFont(size=config.FONT_HEADER_SUBTITLE, slant="italic"),
+            font=ctk.CTkFont(size=config.FONT_HEADER_SUBTITLE),
             text_color=config.COLOR_TEXT_MUTED,
         ).pack()
 

@@ -97,7 +97,9 @@ class MainWindow(ctk.CTk):
 
         self._recommender.recommend_async(
             query_path=path,
-            on_success=lambda results: self._on_recommendation_done(token, results, None),
+            on_success=lambda results: self._on_recommendation_done(
+                token, results, None
+            ),
             on_error=lambda message: self._on_recommendation_done(token, [], message),
         )
 
